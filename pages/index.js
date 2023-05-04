@@ -26,7 +26,7 @@ export default function Home() {
             <div className="mt-4 sm:mt-6 md:mt-8">
               <Link
                 className="flex items-center duration-300 hover:text-sky-600"
-                href={"/blog"}
+                href={"/Blog"}
               >
                 <p className="text-sm md:text-md">See Blog</p>
                 <div>

@@ -27,7 +27,7 @@ const User = () => {
           </div>
           <div className="mt-4 w-[350px] sm:w-[400px] md:w-[500px] lg:w-[750px] grid grid-cols-1 gap-4">
           {user.map((item)=>(
-            <div className="flex justify-between px-3 py-1 bg-sky-400 rounded-full items-center w-full">
+            <div key={item.id} className="flex justify-between px-3 py-1 bg-sky-400 rounded-full items-center w-full">
               <div className="bg-white rounded-full p-1 sm:p-2">
                 <p className="text-xs">img</p>
               </div>

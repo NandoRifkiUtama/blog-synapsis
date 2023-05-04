@@ -22,13 +22,13 @@ const Header = () => {
             </Link>
             <Link
               className="text-xs md:text-sm hover:scale-105 hover:text-white/70 duration-100"
-              href={"/blog"}
+              href={"/Blog"}
             >
               <p>Blog</p>
             </Link>
             <Link
               className="text-xs md:text-sm hover:scale-105 hover:text-white/70 duration-100"
-              href={"/user"}
+              href={"/User"}
             >
               <p>User</p>
             </Link>
@@ -49,13 +49,13 @@ const Header = () => {
               </Link>
               <Link
                 className="text-sm hover:scale-105 hover:text-white/70 duration-100"
-                href={"/blog"}
+                href={"/Blog"}
               >
                 <p>Blog</p>
               </Link>
               <Link
                 className="text-sm hover:scale-105 hover:text-white/70 duration-100"
-                href={"/user"}
+                href={"/User"}
               >
                 <p>User</p>
               </Link>
