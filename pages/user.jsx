@@ -5,7 +5,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
 import Head from "next/head";
 
-const user = () => {
+const User = () => {
   const [user, setUser] = useState([]);
   const url2 = "https://gorest.co.in/public/v2/users";
   useEffect(() => {
@@ -56,4 +56,4 @@ const user = () => {
   );
 };
 
-export default user;
+export default User;

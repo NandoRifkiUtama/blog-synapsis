@@ -4,7 +4,7 @@ import axios from "axios";
 import Link from "next/link";
 import Head from "next/head";
 
-const blog = () => {
+const Blog = () => {
   const [data, setData] = useState([]);
   const url1 = "https://gorest.co.in/public/v2/posts";
 
@@ -65,4 +65,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default Blog;
