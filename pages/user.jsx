@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../components/Layout";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
 import Head from "next/head";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const User = () => {
   const [user, setUser] = useState([]);
@@ -15,19 +16,22 @@ const User = () => {
   }, []);
   return (
     <>
-    <Head>
-      <title>Synapsis.Blog | User</title>
-    </Head>
-      <Layout>
-        <section className="w-max-[500px] py-5 px-3 md:px-20 h-full flex flex-col items-center mb-20">
-          <div>
-            <h1 className="text-center text-xl md:text-2xl font-semibold">
-              User List
-            </h1>
-          </div>
-          <div className="mt-4 w-[350px] sm:w-[400px] md:w-[500px] lg:w-[750px] grid grid-cols-1 gap-4">
-          {user.map((item)=>(
-            <div key={item.id} className="flex justify-between px-3 py-1 bg-sky-400 rounded-full items-center w-full">
+      <Head>
+        <title>Synapsis.Blog | User</title>
+      </Head>
+      <Header />
+      <section className="w-max-[500px] py-5 px-3 md:px-20 h-full flex flex-col items-center mb-20">
+        <div>
+          <h1 className="text-center text-xl md:text-2xl font-semibold">
+            User List
+          </h1>
+        </div>
+        <div className="mt-4 w-[350px] sm:w-[400px] md:w-[500px] lg:w-[750px] grid grid-cols-1 gap-4">
+          {user.map((item) => (
+            <div
+              key={item.id}
+              className="flex justify-between px-3 py-1 bg-sky-400 rounded-full items-center w-full"
+            >
               <div className="bg-white rounded-full p-1 sm:p-2">
                 <p className="text-xs">img</p>
               </div>
@@ -48,10 +52,9 @@ const User = () => {
               </div>
             </div>
           ))}
-            
-          </div>
-        </section>
-      </Layout>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };
